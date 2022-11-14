@@ -4,14 +4,6 @@ const slider = document.querySelector('#slider');
 const sliderValue = document.getElementById('slider').value;
 const showVal = document.querySelector('#val');
 
-console.log(sliderValue);
-
-slider.addEventListener('input', () => {
-    console.log(slider.value);
-});
-
-
-
 function makeRows(rows, columns) {
     container.style.setProperty('--rows', rows);
     container.style.setProperty('--cols', columns);
@@ -27,4 +19,12 @@ function makeRows(rows, columns) {
     };
 };
 
-makeRows(sliderValue,sliderValue);
+clear.addEventListener('click', () => {
+    makeRows(slider.value, slider.value);
+});
+
+slider.addEventListener('input', () => {
+    console.log(slider.value);
+});
+
+makeRows(slider.value,slider.value);
