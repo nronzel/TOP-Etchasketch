@@ -36,6 +36,9 @@ body {
     text-align: center;
     -webkit-box-shadow: 0px 1px 15px -4px #000000; 
     box-shadow: 0px 1px 15px -4px #000000;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
 .controls {
