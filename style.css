@@ -56,3 +56,17 @@ body {
 .hovered {
     background-color: black;
 }
+
+.reset {
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem .8rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}

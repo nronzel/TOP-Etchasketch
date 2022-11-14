@@ -1,9 +1,15 @@
 const container = document.querySelector('.container');
 const clear = document.querySelector('.reset');
+const slider = document.querySelector('#slider');
+const sliderValue = document.getElementById('slider').value;
+const showVal = document.querySelector('#val');
 
-// function reset(e) {
-//     e.classList.remove = 'hovered';
-// }
+console.log(sliderValue);
+
+slider.addEventListener('input', () => {
+    console.log(slider.value);
+});
+
 
 
 function makeRows(rows, columns) {
@@ -11,7 +17,6 @@ function makeRows(rows, columns) {
     container.style.setProperty('--cols', columns);
     for (let i = 0; i < (rows * columns); i++) {
         let cell = document.createElement('div');
-        // cell.textContent = (i + 1);
         container.appendChild(cell).className = 'gridItem';
         cell.onmouseover = function () {
             cell.classList = 'hovered';
@@ -22,6 +27,4 @@ function makeRows(rows, columns) {
     };
 };
 
-// clear.addEventListener('click', reset);
-
-makeRows(16,16);
+makeRows(sliderValue,sliderValue);
