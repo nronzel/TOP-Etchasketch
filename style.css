@@ -16,8 +16,8 @@ html {
 }
 
 :root {
-    --cols: = 15;
-    --rows: = 15; 
+    --cols: = 1;
+    --rows: = 1; 
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 
 .container {
     border: 1px solid lightgrey;
-    border-radius: 2rem;;
+    border-radius: .4rem;
     height: 30rem;
     width: 30rem;
     text-align: center;
@@ -40,6 +40,7 @@ body {
     display: grid;
     grid-template-columns: repeat(var(--cols), 1fr);
     grid-template-rows: repeat(var(--rows), 1fr);
+    padding: .5rem
 }
 
 .controls {
@@ -49,5 +50,9 @@ body {
 }
 
 .gridItem {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.hovered {
+    background-color: black;
 }
