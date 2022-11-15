@@ -1,4 +1,4 @@
-// TODO add radio button to choose b&w or color
+// TODO Need to refactor to allow the page to refresh and theme choice to update when clicking clear and not having to fully refresh the page
 
 const container = document.querySelector('.container');
 const clear = document.querySelector('.reset');
