@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Etch-a-Sketch</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="../fontawesome-free-web-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="../fontawesome-free-web-5.15.4-web/css/brands.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Etch-a-Sketch</title>
 </head>
+
 <body>
-    <div class="header"><h1>Etch-a-Sketch</h1></div>
-    <div class="main">
-        <div class="container">
-        </div>
-        <div class="controls">
-            <button class="reset" type="reset" label="reset" value="reset">Reset</button>
-            <div class="slider-container">
-                <input type="range" name="size" id="slider" min="2" max="100" value="16" oninput="val.textContent = this.value">
-                <p id="val"></p>
-            </div>
-            <div class="theme">
-                <p>Choose Theme:</p>
-                <input type="radio" class="radio" name="scheme" id="theme-black" value="black" checked="checked">Black
-                <input type="radio" class="radio" name="scheme" id="theme-color" value="colorful">Colorful
-            </div>
-        </div>
+  <div class="header">
+    <h1>Etch-a-Sketch</h1>
+  </div>
+  <div class="main">
+    <div class="container">
     </div>
-    <footer>
-        <p>by Nick Ronzel</p>
-    </footer>
+    <div class="controls">
+      <button class="reset" type="reset" value="reset">Reset</button>
+      <div class="slider-container">
+        <p>Size:</p>
+        <input type="range" name="size" id="slider" min="2" max="100" value="16">
+        <p id="val"></p>
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="theme">
+        <p>Choose Theme:</p>
+        <input type="radio" class="radio" name="scheme" id="theme-black" value="black" checked="checked"> Black
+        <input type="radio" class="radio" name="scheme" id="theme-color" value="colorful"> Colorful
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="footer-text">Copyright © 2023 nronzel</p>
+    <a class="github-logo" href="https://github.com/nronzel" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  </footer>
 </body>
+
 </html>
