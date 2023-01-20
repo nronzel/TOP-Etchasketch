@@ -1,5 +1,7 @@
 # TOP-Etchasketch
+
+[Live Preview](https://nronzel.github.io/TOP-Etchasketch/)
+
 The Odin Project | Etch-a-Sketch project
 
-> currently has a bug that requires a page refresh between switching themes
-
+![screenshot](./img/screenshot.png)
