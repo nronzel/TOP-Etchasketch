@@ -37,7 +37,7 @@ const applyEventListeners = () => {
   resetBtn.addEventListener("click", drawGame);
   sizeSubmit.addEventListener("click", drawGame);
   slider.addEventListener("input", drawSliderValue);
-  slider.addEventListener("change", addCheckBtn);
+  slider.addEventListener("mouseup", addCheckBtn);
 };
 
 const addCheckBtn = () => {
